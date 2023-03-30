@@ -11,6 +11,19 @@ root.render(
   </React.StrictMode>
 );
 
+
+import Arrow from './Arrow';
+
+const MyComponent = () => (
+  <div>
+  
+    <Arrow direction="left" onClick={() => console.log('Left arrow clicked!')} />
+    <Arrow direction="right" onClick={() => console.log('Right arrow clicked!')} />
+  </div>
+);
+
+export default MyComponent;
+
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
